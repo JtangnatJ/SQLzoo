@@ -7,3 +7,7 @@
 -- 3. Give the total GDP of Africa
     SELECT SUM(gdp) FROM world
         WHERE continent = 'Africa';
+
+-- 4. How many countries have an area of at least 1000000
+    SELECT COUNT(name) FROM world
+        WHERE area > 1000000;
