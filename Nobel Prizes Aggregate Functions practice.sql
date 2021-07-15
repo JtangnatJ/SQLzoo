@@ -7,3 +7,7 @@
 -- 3. Show the total number of prizes awarded for Physics.
     SELECT COUNT(subject) FROM nobel
         WHERE subject = 'Physics';
+
+-- 4. For each subject show the subject and the number of prizes.
+    SELECT subject, COUNT(winner) FROM nobel
+        GROUP BY subject;
