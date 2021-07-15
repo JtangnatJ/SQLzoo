@@ -11,3 +11,7 @@
 -- 4. For each subject show the subject and the number of prizes.
     SELECT subject, COUNT(winner) FROM nobel
         GROUP BY subject;
+
+-- 5. For each subject show the first year that the prize was awarded.
+    SELECT subject, MIN(yr) FROm nobel
+        GROUP BY subject;
