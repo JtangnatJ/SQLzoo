@@ -20,3 +20,7 @@
     SELECT subject, COUNT(winner) FROM nobel
         WHERE yr = 2000
         GROUP BY subject;
+
+-- 7. Show the number of different winners for each subject.
+    SELECT subject, COUNT(DISTINCT winner) FROM nobel
+        GROUP BY subject;
