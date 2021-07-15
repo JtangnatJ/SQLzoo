@@ -24,3 +24,7 @@
 -- 7. Show the number of different winners for each subject.
     SELECT subject, COUNT(DISTINCT winner) FROM nobel
         GROUP BY subject;
+
+-- 8. For each subject show how many years have had prizes awarded.
+    SELECT subject, COUNT(DISTINCT yr) FROM nobel 
+        GROUP BY subject;
