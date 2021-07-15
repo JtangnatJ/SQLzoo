@@ -34,3 +34,8 @@
         WHERE subject = 'Physics'
         GROUP BY yr
         HAVING COUNT(winner) = 3;
+
+-- 10.  Show winners who have won more than once.
+    SELECT winner FROM nobel
+        GROUP BY winner
+        HAVING COUNT(yr) > 1; 
