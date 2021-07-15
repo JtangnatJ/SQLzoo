@@ -39,3 +39,8 @@
     SELECT winner FROM nobel
         GROUP BY winner
         HAVING COUNT(yr) > 1; 
+
+-- 11. Show winners who have won more than one subject.
+    SELECT winner FROM nobel
+        GROUP BY winner
+        HAVING COUNT( DISTINCT subject) > 1;     
